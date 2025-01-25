@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #ff4c4c;
+    background-color: #7842a1;
     color: #fff;
     padding: 10px 20px;
     display: flex;
@@ -42,11 +42,11 @@ header .nav-links a {
 }
 
 header .nav-links a:hover {
-    color: #ffd700;
+    color: #454851;
 }
 
 .hero {
-    background-color: #ffd700;
+    background-color: #454851;
     color: #333;
     text-align: center;
     padding: 50px 20px;
@@ -65,7 +65,7 @@ header .nav-links a:hover {
 .hero .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ff4c4c;
+    background-color: #7842a1;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -74,7 +74,7 @@ header .nav-links a:hover {
 }
 
 .hero .btn:hover {
-    background-color: #e63939;
+    background-color: #7842a1;
 }
 
 .products {
@@ -116,7 +116,7 @@ header .nav-links a:hover {
 
 .product span {
     font-weight: bold;
-    color: #ff4c4c;
+    color: #7842a1;
 }
 
 footer {
