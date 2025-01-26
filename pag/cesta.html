@@ -11,7 +11,6 @@
     <header>
         <div class="logo"><a href="/Proyecto-LM-Juegos/index.html"><img class="logo" src="../img/logo.png" alt="">Lost Games</a></div>
             <ul class="nav-links">
-                <li><a href="/Proyecto-LM-Juegos/index.html">Lost Games</a></li>
                 <li><a href="/Proyecto-LM-Juegos/pag/pcgamespage.html">PC</a></li>
                 <li><a href="#">PlayStation</a></li>
                 <li><a href="#">Nintendo</a></li>
@@ -20,5 +19,73 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <div class="cesta">
+        <section class="cart">
+            <h1>Tu cesta de compra</h1>
+    
+            <div class="cart-items">
+                <div class="cart-item">
+                    <img src="../img/pc/NewVegas.jpg" alt="Fallout New Vegas">
+                    <div class="cart-item-details">
+                        <h3>Fallout New Vegas PC</h3>
+                        <span class="price">299.99€</span>
+                        <p>Cantidad: 1</p>
+                        <button class="remove-item">Eliminar</button>
+                    </div>
+                </div>
+    
+                <div class="cart-item">
+                    <img src="../img/pc/batman arkham knight.jpg" alt="Batman Arkham Knight">
+                    <div class="cart-item-details">
+                        <h3>Batman Arkham Knight PC</h3>
+                        <span class="price">349.99€</span>
+                        <p>Cantidad: 1</p>
+                        <button class="remove-item">Eliminar</button>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="cart-summary">
+                <p><strong>Total:</strong> 649.98€</p>
+                <button class="checkout-button">Proceder al pago</button>
+            </div>
+        </section>
+
+        <section class="checkout">
+            <h2>Detalles de facturación</h2>
+            <form>
+                <label for="name">Nombre completo</label>
+                <input type="text" id="name" name="name">
+    
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email">
+    
+                <label for="address">Dirección</label>
+                <input type="text" id="address" name="address">
+    
+                <label for="city">Ciudad</label>
+                <input type="text" id="city" name="city">
+    
+                <label for="postal-code">Código postal</label>
+                <input type="text" id="postal-code" name="postal-code">
+    
+                <label for="payment-method">Método de pago</label>
+                <select id="payment-method" name="payment-method">
+                    <option value="credit-card">Tarjeta de crédito</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank-transfer">Transferencia bancaria</option>
+                </select>
+    
+                <button type="submit">Realizar pedido</button>
+            </form>
+        </section>
+        </div>
+    </main>    
+    <footer>
+        <H1></H1>
+        <p>&copy; 2025 Lost Games. All right reserved.</p>
+    </footer>
 </body>
 </html>
