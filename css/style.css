@@ -14,6 +14,7 @@ body {
 header {
     background-color: #7842a1;
     color: #fff;
+    height: 85px;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -27,6 +28,11 @@ header .logo a {
     text-decoration: none;
     transition: color 0.3s;
 }
+
+.logo img {
+    width: 50px;  
+    height: auto; 
+  }
 
 
 header .nav-links {
@@ -159,4 +165,43 @@ footer {
     .product-grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
+}
+
+.vinyl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 200px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.vinyl img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.vinyl p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.vinyl span {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Для расположения блоков сеткой */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
