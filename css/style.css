@@ -89,18 +89,32 @@ header .nav-links a:hover .logo {
     background-color: #7842a1;
 }
 
-/*css para pagina de PC*/
+
 .hero-for-pc {
     background-image: url('../img/pc/screamFondo.jpg');
     background-size: contain;
-    background-position: right; 
-    background-repeat: no-repeat; 
+    background-position: right;
+    background-repeat: no-repeat;
     background-color: #222324;
     color: #ffffff;
     text-align: left;
     padding: 50px 20px;
 }
 
+.hero-for-pc .hero-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.hero-for-pc .hero-content .hero-image {
+    max-width: 150px;
+    height: auto;
+}
+
+.hero-for-pc .hero-content .text-section {
+    max-width: 60%; 
+}
 
 .hero-for-pc h1 {
     font-size: 36px;
@@ -124,8 +138,9 @@ header .nav-links a:hover .logo {
 }
 
 .hero-for-pc .btn:hover {
-    background-color: #7842a1;
+    background-color: #5b3181;
 }
+
 /*css para pagina de PC fin*/
 
 
