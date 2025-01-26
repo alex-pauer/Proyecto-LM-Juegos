@@ -581,3 +581,33 @@ h1, h2 {
         font-size: 14px;
     }
 }
+
+/* Sigo con el estilo de index aqui porque no encuentro el resto */
+.featured {
+    background-color: #454851;
+    color: white;
+    text-align: center;
+}
+
+.featured h1{
+    background-color: #7842a1;
+
+}
+
+.featured img {
+    height: 300px;
+    border-radius: 10px;
+    border: solid 2px white;
+}
+.featured-dentro{
+    padding: 10px;
+}
+.featured button {
+    padding: 10px 20px;
+    background-color: #7842a1;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+    border: 0px;
+    text-decoration: none; 
+}
