@@ -224,7 +224,7 @@ footer {
     }
 }
 
-.vinyl {
+.madnos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -238,19 +238,19 @@ footer {
     background-color: #f9f9f9;
 }
 
-.vinyl img {
-    max-width: 100%;
+.mandos img {
+    max-width: 50%;
     height: auto;
     border-radius: 8px;
     margin-bottom: 10px;
 }
 
-.vinyl p {
+.madnos p {
     font-size: 16px;
     margin: 5px 0;
 }
 
-.vinyl span {
+.mandos span {
     font-size: 14px;
     color: #555;
 }
