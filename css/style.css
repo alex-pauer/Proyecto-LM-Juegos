@@ -615,4 +615,17 @@ h1, h2 {
 .plus-rep-foru {
     max-width: 500px;
     max-height: auto;
+    margin-left: 500px;
+    margin-bottom: 200px;
+    margin-top: 40px;
+}
+
+/*cesta*/
+
+.pedido button {
+    color: #7842a1;
+}
+
+.cesta-img  img{
+    width: 40px;
 }

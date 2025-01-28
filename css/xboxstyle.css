@@ -586,3 +586,7 @@ h1, h2 {
     max-width: 500px;
     max-height: auto;
 }
+
+.cesta-img  img{
+    width: 40px;
+}
