@@ -20,6 +20,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 header .logo a {
@@ -187,8 +188,8 @@ button:hover {
 }
 
 .products img {
-    height: 220px;
-    width: auto; 
+    height: 180px;
+    width: auto;
 }
 
 footer {
