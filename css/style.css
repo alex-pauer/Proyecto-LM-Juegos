@@ -127,6 +127,18 @@ button:hover {
     font-size: 18px;
     margin-bottom: 20px;
 }
+
+.hero-for-pc .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7842a1;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
 /*css para pagina de PC fin*/
 
 
