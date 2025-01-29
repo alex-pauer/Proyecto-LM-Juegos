@@ -439,8 +439,14 @@ h1, h2 {
     cursor: pointer;
 }
 
+
+
 .checkout button:hover {
-    background-color: darkgreen;
+    background-color: #7842a1;
+}
+
+.checkout button {
+    background-color: #7842a1;
 }
 
 @media (max-width: 1024px) {
