@@ -633,50 +633,60 @@ a {
 /*user-page*/
 
 .login-container {
-    background: rgba(30, 30, 30, 0.9);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    width: 600px;
-    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.login-container h2 {
+.login-box {
+    background: rgba(34, 35, 36, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    width: 620px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.login-box h2 {
     color: #fff;
+    margin-bottom: 20px;
+}
+
+.input-group {
     margin-bottom: 15px;
 }
 
-.login-container input {
+.input-group input {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
     border: none;
     border-radius: 5px;
-    background: #444;
+    background: #3b3b3b;
     color: #fff;
 }
 
 .forgot-password {
     display: block;
-    margin-bottom: 10px;
-    color: #a187c3;
-    text-decoration: none;
+    color: #a09fa0;
+    margin-bottom: 15px;
     font-size: 14px;
+    text-decoration: none;
 }
 
-.login-container button {
+.login-btn {
     width: 100%;
     padding: 10px;
     border: none;
     border-radius: 5px;
     background: #7842a1;
-    color: white;
+    color: #fff;
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
     transition: background 0.3s;
 }
 
-.login-container button:hover {
-    background: #5a2e7e;
+.login-btn:hover {
+    background: #5a2e80;
 }
