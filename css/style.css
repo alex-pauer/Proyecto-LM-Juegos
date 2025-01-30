@@ -92,6 +92,13 @@ button:hover {
     cursor: pointer;
 }
 
+/*para lo de ver catalogo de arriba izquierda*/
+a.btn:hover {
+    background-color: #ffffff;
+    color: #454851;
+    cursor: pointer;
+}
+
 /* a partir de aqui pc creo */
 .hero-for-pc {
     background-image: url('../img/pc/screamFondo.jpg');
@@ -164,22 +171,32 @@ button:hover {
 .product {
     background-color: #fff;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
+
+    width: auto;
+    height: auto;
+    /*le añadi flexbox para que el texto este en linea todos*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
 }
 
 .product img {
-    width: 100%;
-    height: auto;
+    flex-grow: 1; /*para que el texto del producto este recto con los otros productos*/
+    width: 80%;
+    height: 80%;
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
 .product p {
+    margin-top: 10px;
+    font-weight: bold;
     font-size: 16px;
-    margin: 10px 0;
 }
 
 .product span {
@@ -197,7 +214,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 @media (max-width: 768px) {
@@ -250,12 +267,14 @@ footer {
 }
 
 .vinyl p {
+    font-weight: bold;
     font-size: 16px;
     margin: 5px 0;
 }
 
 .vinyl span {
     font-size: 14px;
+    font-weight: bold;
     color: #555;
 }
 
@@ -753,3 +772,41 @@ a {
     background: #5a2e80;
 }
 
+
+/*hover para las imagenes*/
+/*inicio*/
+
+div.product-grid div.product {
+    overflow: hidden; /*para que la imagen no se salga del contenedor*/
+    position: relative; /*para el control de tamaño de la imagen*/
+}
+
+
+div.product-grid div.product img {
+    transition: transform 0.3s ease-in-out;
+    object-fit: contain; /*mantiene la forma de la imagen*/
+    width: 80%;
+    height: auto;
+}
+
+div.product-grid div.product img:hover {
+    transform: scale(1.1); /*aumenta el tamaño de imgs un 10%*/
+}
+
+/*los mismo hovers de arriba pero para los contenedores de vinyl*/
+div.container div.vinyl{
+    overflow: hidden; 
+    position: relative; 
+}
+
+
+div.container div.vinyl img {
+    width: 80%; 
+    height: 80%;
+    object-fit: contain;  
+    transition: transform 0.3s ease-in-out;
+}
+
+div.container div.vinyl img:hover {
+    transform: scale(1.1); 
+}
