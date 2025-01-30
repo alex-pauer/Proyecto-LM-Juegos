@@ -350,9 +350,9 @@ input#slide3:checked ~ .slider-nav label[for="slide3"] {
 }
 /*Slider para pc fin*/
 
-
 .cart, .checkout {
-    max-width: 1200px;
+    max-width: 1000px;
+    max-height: 800px;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -687,11 +687,17 @@ a {
 
 /*user-page*/
 
+.logo-user-page {
+    max-width: 100px;
+    max-height: auto;
+    margin: 0;
+}
+
 .login-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 75vh;
 }
 
 .login-box {
@@ -700,6 +706,7 @@ a {
     border-radius: 12px;
     text-align: center;
     width: 620px;
+    height: 550px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -745,3 +752,4 @@ a {
 .login-btn:hover {
     background: #5a2e80;
 }
+
