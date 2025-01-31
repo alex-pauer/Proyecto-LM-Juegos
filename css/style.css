@@ -850,8 +850,9 @@ a {
     padding: 30px;
     border-radius: 12px;
     text-align: center;
-    width: 620px;
-    height: 550px;
+    width: 500px;
+    height: 450px;
+    margin: 5px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -874,6 +875,14 @@ a {
 }
 
 .forgot-password {
+    display: block;
+    color: #a09fa0;
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.create-acc {
     display: block;
     color: #a09fa0;
     margin-bottom: 15px;
