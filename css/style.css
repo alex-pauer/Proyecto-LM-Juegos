@@ -915,6 +915,7 @@ div.product-grid div.product img:hover {
     transform: scale(1.1); /*aumenta el tamaño de imgs un 10%*/
 }
 
+
 /*los mismo hovers de arriba pero para los contenedores de vinyl*/
 div.container div.vinyl{
     overflow: hidden; 
@@ -950,3 +951,4 @@ div.container div.manods img {
 div.container div.mandos img:hover {
     transform: scale(1.1); 
 }
+
