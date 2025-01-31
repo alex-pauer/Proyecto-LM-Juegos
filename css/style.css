@@ -20,15 +20,19 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    vertical-align: middle;
 }
 
+
+
+
 header .logo a {
+    display: flex;
+    align-items: center;
     color: #fff;
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
-    transition: color 0.3s;
 }
 
 .logo img {
