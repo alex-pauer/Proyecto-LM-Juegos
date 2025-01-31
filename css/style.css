@@ -209,7 +209,7 @@ a.btn:hover {
     width: auto;
 }
 
-/* Juegos Xbox */
+/* Inicio productos Xbox */
 .productsXbox {
     background-color: #f0e0da;
     padding: 20px;
@@ -222,7 +222,7 @@ a.btn:hover {
     text-align: left;
 }
 
-.productsXbox-grid {
+.product_Xbox-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
@@ -231,32 +231,22 @@ a.btn:hover {
 .productsXbox {
     background-color: #fff;
     padding: 20px;
-    border: 2px solid #ddd;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-
-    width: auto;
-    height: auto;
-    /*le añadi flexbox para que el texto este en linea todos*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
 }
 
 .productsXbox img {
-    flex-grow: 1; /*para que el texto del producto este recto con los otros productos*/
-    width: 80%;
-    height: 80%;
+    width: 50%;
+    height: auto;
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
 .productsXbox p {
-    margin-top: 10px;
-    font-weight: bold;
     font-size: 16px;
+    margin: 10px 0;
 }
 
 .productsXbox span {
@@ -264,12 +254,7 @@ a.btn:hover {
     color: #7842a1;
 }
 
-.productsXbox img {
-    height: 180px;
-    width: auto;
-}
-
-/* Fin juegos Xbox*/
+/* Fin productos Xbox */
 
 footer {
     background-color: #333;
@@ -305,8 +290,14 @@ footer {
     .product-grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
+
+    /* Product Xbox */ 
+    .product_Xbox-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
 }
 
+/* Incio vinyl PC */
 .vinyl {
     display: flex;
     flex-direction: column;
@@ -339,6 +330,8 @@ footer {
     font-weight: bold;
     color: #555;
 }
+
+/* Fin vinyl PC */
 
 /* Mandos xbox */
 .mandos {
@@ -568,6 +561,11 @@ h1, h2 {
     .vinyl {
         max-width: 200px;
     }
+
+    /* mandos Xbox */
+    .mandos {
+        max-width: 200px;
+    }
     
     .hero h1 {
         font-size: 26px;
@@ -583,6 +581,11 @@ h1, h2 {
     .product-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
+
+    /* product xbox */
+    .product_Xbox-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
     
     .slider {
         max-width: 800px;
@@ -596,6 +599,11 @@ h1, h2 {
 /* 1024px  */
 @media (min-width: 1024px) {
     .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    /* product xbox */
+    .product_Xbox-grid {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
     
@@ -665,6 +673,11 @@ h1, h2 {
     .product-grid {
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     }
+
+    /* product xbox */ 
+    .product_Xbox-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
     
     /* Slider */
     .slider-nav .dot {
@@ -714,6 +727,15 @@ h1, h2 {
     .product img {
         height: 150px;
     }
+
+    /* product xbox */ 
+    .productsXbox {
+        padding: 15px;
+    }
+    
+    .productsXbox img {
+        height: 150px;
+    }
     
     /* Slider */
     .slider-nav {
@@ -731,7 +753,13 @@ h1, h2 {
         margin: 5px;
     }
     
+    /* product PC */
     .product-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Product Xbox */
+    .product_Xbox-grid {
         grid-template-columns: 1fr;
     }
     
@@ -902,5 +930,23 @@ div.container div.vinyl img {
 }
 
 div.container div.vinyl img:hover {
+    transform: scale(1.1); 
+}
+
+/* hovers para contenedores de mandos */
+div.container div.mandos{
+    overflow: hidden; 
+    position: relative; 
+}
+
+
+div.container div.manods img {
+    width: 80%; 
+    height: 80%;
+    object-fit: contain;  
+    transition: transform 0.3s ease-in-out;
+}
+
+div.container div.mandos img:hover {
     transform: scale(1.1); 
 }
