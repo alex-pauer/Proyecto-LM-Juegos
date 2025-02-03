@@ -148,14 +148,11 @@ a.btn:hover {
 
 /*css para pagina de PC fin*/
 
-/* Footer */
+/* Footer
 footer {
-    background-color: #7842a1; 
+    background-color: #222324; 
     color: white; 
-    padding: 20px;
-    text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
+
 }
 
 .footer-content {
@@ -166,7 +163,45 @@ footer {
 .footer-section ul {
     list-style: none;
 }
-/* Fin Footer */
+Fin Footer */
+
+/*Footer 2*/
+footer {
+    background-color: #222324; 
+    color: white; 
+
+}
+.footerContainet{
+    width: 100%;
+    padding: 20px;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons img{
+    margin: 20px 20px 0px 20px;
+    width: 35px;
+    height: 35px;
+}
+.footerNav{
+    margin: 20px;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.footerNav ul li a{
+    margin: 20px;
+    text-decoration: none;
+}
+.footerBottom{
+    background-color: #7842a1;
+    text-align: center;
+    padding: 15px;
+}
+/* Fin Footer 2 */
 
 /* Productos */
 .products {
