@@ -862,6 +862,65 @@ a {
     margin-top: 40px;
 }
 
+.product-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    
+    
+}
+
+.btnU {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #7842a1;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btnU:hover {
+    background-color: #5a2e80;
+}
+   
+
+.product-image {
+    max-width: 500px;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.product-info {
+    max-width: 600px;
+}
+
+.product-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.product-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.product-price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #7842a1;
+    margin-bottom: 20px;
+}
+
+
+
 /*cesta*/
 
 .pedido button {
