@@ -18,6 +18,8 @@ header {
     justify-content: space-between;
     align-items: center;
     vertical-align: middle;
+        vertical-align: middle;
+
 }
 
 
@@ -26,10 +28,13 @@ header .logo a {
     align-items: center;
     font-size: 24px;
     font-weight: bold;
+    vertical-align: middle;
+
 }
 
 .logo img {
     width: 50px;  
+    veºrtical-align: middle;
   }
 
 
@@ -488,13 +493,10 @@ input#slide3:checked ~ .slider-nav label[for="slide3"] {
 /*Slider para pc fin*/
 
 .cart, .checkout {
-    max-width: 1000px;
-    max-height: 800px;
-    margin: 0 auto;
+    max-width:80%;
+    /*para que se vea centrado*/
+    margin: 0px auto;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1, h2 {
@@ -503,26 +505,25 @@ h1, h2 {
 }
 
 .cart-items {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
 }
 
 .cart-item {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    border-bottom: 1px solid #ccc;
+    /*line separacion entre articulos*/
+    border-bottom: 2px solid #7842a1;
     padding-bottom: 20px;
 }
 
 .cart-item img {
-    max-width: 100px;
+    width: 100px;
     margin-right: 20px;
-}
-
-.cart-item-details {
-    flex: 1;
 }
 
 .cart-item-details h3 {
@@ -531,17 +532,28 @@ h1, h2 {
 
 .cart-item-details .price {
     font-size: 16px;
-    color: #555;
+    font-weight: bold;
+    color: #7842a1;
 }
 
 .cart-item-details button {
-    background-color: red;
+    padding: 10px 20px;
+    background-color: #7842a1;
     color: white;
-    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
     border: none;
     cursor: pointer;
     margin-top: 10px;
+
 }
+.cart-item-details button:hover { 
+    background-color: white;
+    color: #7842a1;
+}
+
+
 
 .cart-summary {
     margin-top: 20px;
@@ -564,28 +576,34 @@ h1, h2 {
 .checkout input, .checkout select {
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #222324;
     border-radius: 5px;
 }
 
 .checkout button {
-    background-color: green;
+    background-color: #7842a1;
     color: white;
     padding: 10px;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
-
-
-
-.checkout button:hover {
+.cart-summary .checkout-button {
+    padding: 10px 20px;
     background-color: #7842a1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    font-weight: bold;
 }
 
-.checkout button {
-    background-color: #7842a1;
+.cart-summary .checkout-button:hover {
+    background-color: white;
+    color: #7842a1;
 }
-
 
 /* 480px  */
 @media (min-width: 480px) {
