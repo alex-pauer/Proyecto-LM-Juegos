@@ -11,7 +11,7 @@ body {
 
 header {
     background-color: #7842a1;
-    color: #fff;
+    color: white;
     height: 85px;
     padding: 20px;
     display: flex;
@@ -49,7 +49,7 @@ header .nav-links a {
 
 .hero {
     background-color: #222324;
-    color: #ffffff;
+    color: white;
     padding: 20px;
 }
 
@@ -63,88 +63,71 @@ header .nav-links a {
     margin-bottom: 20px;
 }
 
+/*Comento esto porque creo que si no se usa en ningun sitio
+
 button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #7842a1;
-    color: #fff;
+    background-color: green;
+    color: white;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 5000px;
     border: none;
 }
 
 button:hover {
-    background-color: #ffffff;
+    background-color: white;
     color: #454851;
     cursor: pointer;
 }
-
+*/
 /*para lo de ver catalogo de arriba izquierda*/
 a.btn:hover {
-    background-color: #ffffff;
-    color: #454851;
+    background-color: white;
+    color: #222324;
     cursor: pointer;
 }
 
-/* HERO */
+/* HERO (PARA TODOS)*/
 .hero-for-pc {
-    background-image: url('../img/pc/screamFondo.jpg');
+    background-image: url(../img/pc/screamFondo.jpg);
+    /*para que lo ocupe todo*/ 
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
     background-color: #222324;
-    color: #ffffff;
+    color: white;
     padding: 50px 20px;
 }
 
 .hero-for-pc .hero-content {
     display: flex;
-    align-items: center;
-    gap: 20px; 
 }
 
 .hero-for-pc .hero-content .hero-image {
     max-width: 150px;
-    height: auto;
-}
-
-.hero-for-pc .hero-content .text-section {
-    max-width: 60%; 
 }
 
 .hero-for-pc h1 {
     font-size: 36px;
-    margin-bottom: 20px;
 }
 
 .hero-for-pc p {
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .hero-for-pc .btn {
-    display: inline-block;
     padding: 10px 20px;
     background-color: #7842a1;
-    color: #fff;
-    text-decoration: none;
+    color: white;
     font-weight: bold;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
-.featured .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #7842a1;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    margin-bottom: 5px;
-}
+
 
 /*css para pagina de PC fin*/
 
