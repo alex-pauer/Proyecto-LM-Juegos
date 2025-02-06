@@ -42,36 +42,39 @@
                 <img src="../img/pc/1.png" alt="PC Gaming" class="hero-image">
             </div>
         </section>
+        <div class="featured">
+            <h1>Productos</h1>
+        </div>
         <section class="products">
-            <section class="slider">
-                <h2>Productos Futuros</h2>
-                <div class="slider-container">
-                    <input type="radio" name="slider" id="slide1" checked>
-                    <input type="radio" name="slider" id="slide2">
-                    <input type="radio" name="slider" id="slide3">
-            
-                    <div class="slides">
-                        <div class="slide">
-                            <img src="../img/pc/slider/fable.webp" alt="">
-                            <p></p>
-                        </div>
-                        <div class="slide">
-                            <img src="../img/pc/slider/mafia.jpg" alt="">
-                            <p></p>
-                        </div>
-                        <div class="slide">
-                            <img src="../img/pc/slider/avowed.jpg_large" alt="">
-                            <p></p>
-                        </div>
-                    </div>
-            
-                    <div class="slider-nav">
-                        <label for="slide1" class="dot"></label>
-                        <label for="slide2" class="dot"></label>
-                        <label for="slide3" class="dot"></label>
-                    </div>
+            <div class="slider">
+                <button class="slider-btn left" onclick="prevSlide()">&#10094;</button>
+                <div class="slider-container" id="slides">
+                    <div class="slide"><img src="../img/pc/slider/fable.webp" alt="Imagen 1"></div>
+                    <div class="slide"><img src="../img/pc/slider/mafia.jpg" alt="Imagen 2"></div>
+                    <div class="slide"><img src="../img/pc/slider/avowed.jpg_large" alt="Imagen 3"></div>
                 </div>
-            </section> &nbsp;&nbsp;
+                <button class="slider-btn right" onclick="nextSlide()">&#10095;</button>
+            </div>
+        
+ <script>
+      let index = 0;
+        function showSlide(n) {
+            const slides = document.querySelectorAll('.slide');
+            if (n >= slides.length) index = 0;
+            if (n < 0) index = slides.length - 1;
+            document.getElementById('slides').style.transform = `translateX(${-index * 100}%)`;
+        }
+
+        function nextSlide() {
+            index++;
+            showSlide(index);
+        }
+
+        function prevSlide() {
+            index--;
+            showSlide(index);
+        }
+    </script>
             <h2>Ediciones coleccionista para PC</h2>
             <div class="product-grid">
                 <div class="product">

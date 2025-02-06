@@ -195,6 +195,24 @@ footer {
     text-align: center;
     padding: 15px;
 }
+
+@media (max-width: 700px){
+    .footerNav ul{
+        align-items: center;
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .footerNav{
+        align-items: center;
+        align-content: center;
+        align-self: center;
+    }
+}
+
 /* Fin Footer 2 */
 
 /* Productos */
@@ -423,79 +441,58 @@ footer {
     max-width: 600px;
     margin: 0 auto;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .slider h2 {
-    margin-right: 0px;
     text-align: left;
 }
 
-.slider img {
-    border-radius: 10px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-}
-
 .slider-container {
-    position: relative;
-}
-
-input[type="radio"] {
-    display: none; 
-}
-
-.slides {
     display: flex;
     transition: transform 0.5s ease;
 }
 
 .slide {
     min-width: 100%;
-    box-sizing: border-box;
     text-align: center;
 }
 
 .slide img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-.slider-nav {
+.slider-btn {
     position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-}
-
-.slider-nav .dot {
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
-    margin-top: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
 }
 
-input#slide1:checked ~ .slides {
-    transform: translateX(0);
+.slider-btn.left {
+    left: 10px;
 }
 
-input#slide2:checked ~ .slides {
-    transform: translateX(-100%);
+.slider-btn.right {
+    right: 10px;
 }
 
-input#slide3:checked ~ .slides {
-    transform: translateX(-200%);
-}
 
-input#slide1:checked ~ .slider-nav label[for="slide1"],
-input#slide2:checked ~ .slider-nav label[for="slide2"],
-input#slide3:checked ~ .slider-nav label[for="slide3"] {
-    background-color: #fff;
-}
+
 /*Slider para pc fin*/
 
 .cart, .checkout {
@@ -841,6 +838,8 @@ h1, h2 {
     }
 }
 
+
+
 /* Sigo con el estilo de index aqui porque no encuentro el resto */
 .featured {
     background-color: #454851;
@@ -850,7 +849,8 @@ h1, h2 {
 
 .featured h1{
     background-color: #7842a1;
-
+    padding: 10px;
+    font-size: 27px;
 }
 
 .featured img {
@@ -970,6 +970,7 @@ a {
     justify-content: center;
     align-items: center;
     height: 75vh;
+    margin: 20px;
 }
 
 .login-box {
@@ -1039,20 +1040,22 @@ a {
 /*inicio*/
 
 div.product-grid div.product {
-    overflow: hidden; /*para que la imagen no se salga del contenedor*/
-    position: relative; /*para el control de tamaño de la imagen*/
+    /*para que la imagen se quede dentro*/
+    overflow: hidden; 
+    position: relative; 
 }
 
 
 div.product-grid div.product img {
     transition: transform 0.3s ease-in-out;
-    object-fit: contain; /*mantiene la forma de la imagen*/
+    object-fit: contain; 
     width: 80%;
     height: auto;
 }
 
 div.product-grid div.product img:hover {
-    transform: scale(1.1); /*aumenta el tamaño de imgs un 10%*/
+    /*La hace un poco más grande*/
+    transform: scale(1.1);
 }
 
 
