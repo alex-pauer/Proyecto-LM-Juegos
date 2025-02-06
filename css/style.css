@@ -68,6 +68,12 @@ header .nav-links a {
     margin-bottom: 20px;
 }
 
+.user-icon img {
+    max-height: 25px;
+    justify-content: center;
+    margin-left: 35px;
+}
+
 /*Comento esto porque creo que si no se usa en ningun sitio
 
 button {
@@ -601,6 +607,23 @@ h1, h2 {
 }
 
 .cart-summary .checkout-button:hover {
+    background-color: white;
+    color: #7842a1;
+}
+
+.btn-index {
+    padding: 10px 20px;
+    background-color: #7842a1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.btn-index:hover {
     background-color: white;
     color: #7842a1;
 }
