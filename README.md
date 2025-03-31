@@ -1,9 +1,59 @@
-# Revisiones Bertha 1
+# LostGames
 
-- La persona que hizo la página de inicio tiene un error en el redirecionamento de los links. utiliza href= "/Proyecto-LM-Juegos/pag/userpage.html".  Esto hace que el redirecionamento del link a la hora de yo descargar el proyecto no funciona de manera correcta porque esa persona está posicionada en una carpeta más afuera del proyecto. este error se soluciona haciendo file/Open folder y abriendo la carpeta del proyecto.
-- Todas las páginas que se encuentran dentro de la carpeta pag tienen el link a CSS hecho de manera incorrecta.  La manera correcta debería ser "../css/style.css"
-- detuve la revisión porque todo el sitio web tiene errores en los links y tienen que arreglarlos de manera URGENTE, porque el Trabajo está para entregar en una semana y a la vez que se clona el repositorio no funciona ningún link. La persona que está haciendo este proyecto tiene mal puesta su carpeta de proyecto y como le está laborando a partir de ahí no ve los errores. Sólo se pueden ver los errores una vez que se clone el proyecto en cualquier otro ordenador, si tienen dudas en que le estoy planteando lo vemos mañana.
-- Para hacer un sitio de una evaluación que tiene que entregarse en menos de una semana, el sitio va bastante atrasado. Lo veo demasiado plano demasiado vacío, sin terminar y realmente no considero que cumpla ni siquiera los requisitos mínimos para considerarse aprobado.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
 
-### Autor
-**Bertha**  
+## Development server
+
+To start a local development server, run:
+
+```bash
+ng serve
+```
+
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+
+## Code scaffolding
+
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+
+```bash
+ng generate component component-name
+```
+
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+
+```bash
+ng generate --help
+```
+
+## Building
+
+To build the project run:
+
+```bash
+ng build
+```
+
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+
+## Running unit tests
+
+To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+
+```bash
+ng test
+```
+
+## Running end-to-end tests
+
+For end-to-end (e2e) testing, run:
+
+```bash
+ng e2e
+```
+
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
